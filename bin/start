@@ -1,0 +1,30 @@
+
+require 'options-stream'
+
+App = require '../lib/aio'
+
+config = require '../etc/default.config.yaml'
+
+{ port } = config
+
+app = new App config
+
+app.listen port, ( err ) ->
+  throw err if err
+  console.log "server listing: #{port}"
+
+quit = () ->
+  console.log 'server quit'
+  process.exit()
+
+process.on 'SIGINT',  quit
+process.on 'SIGQUIT', quit
+process.on 'exit',    quit
+
+process.on 'uncaughtException', (err)->
+  console.log err
+  console.log "---------"
+  console.log err.stack
+  quit()
+
+

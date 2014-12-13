@@ -1,0 +1,34 @@
+{
+  "name": "work-note-backend",
+  "main": "",
+  "version": "0.0.2",
+  "dependencies": {
+    "coffee-script-es6" : "*",
+    "koa"               : "*",
+    "options-stream"    : "*",
+    "koa-router"        : "*",
+    "koa-mount"         : "*",
+    "response-patch"    : "*",
+    "thunkify-wrap"     : "*",
+    "moment"            : "*",
+    "koa-body-parser"   : "*",
+    "koa-static"        : "*",
+    "options-stream"    : "*",
+    "event-pipe"        : "*",
+    "mysql"             : "*",
+    "moment"            : "*"
+  },
+  "devDependencies": {
+  },
+  "engines": [
+    "node >=0.8.14"
+  ],
+  "scripts": {
+    "test": "make test"
+  }
+}
+
+
+
+
+

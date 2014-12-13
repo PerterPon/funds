@@ -1,0 +1,9 @@
+
+port : 9000
+
+mysql:
+  host : 'perterpon.mysql.rds.aliyuncs.com'
+  user : 'funds'
+  password : 'pon423904'
+  database : 'funds'
+  port     : 3306
